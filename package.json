@@ -1,0 +1,37 @@
+{
+  "name": "ts-dsa",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms with types",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run tsc"
+  },
+  "keywords": [
+    "typescript",
+    "data structures",
+    "algorithms",
+    "commonjs",
+    "esmodules"
+  ],
+  "author": "Bernardo de Stefano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardodestefano/ts-dsa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bernardodestefano/ts-dsa/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  }
+}

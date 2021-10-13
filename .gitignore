@@ -1,0 +1,19 @@
+/dist
+/build
+/node_modules
+.DS_Store
+
+# Ignore IDE configuration files
+.idea/ 
+.vscode/
+
+# Ignore files with sensitive environment variables
+.env
+.env.test
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
