@@ -1,0 +1,43 @@
+{
+  "name": "ts-dsa",
+  "version": "1.0.2",
+  "description": "Leetcode utils and Data Structures and Algorithms with types",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "ts-types": " tsc --emitDeclarationOnly --declaration --outDir lib",
+    "build": "rimraf lib && node ./esbuild.js && npm run ts-types",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "typescript",
+    "data structures",
+    "algorithms",
+    "commonjs",
+    "esmodules",
+    "leetcode",
+    "utils"
+  ],
+  "author": "Bernardo de Stefano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardodestefano/ts-dsa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bernardodestefano/ts-dsa/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "esbuild": "^0.14.39",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.4"
+  }
+}
